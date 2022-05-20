@@ -1,0 +1,2 @@
+# assesmentTH
+Customer Rewards Calculator
