@@ -7,15 +7,16 @@ This project calcualtes the rewards earned for the customer for every purchase (
 ```'
 mvn clean install
 ```
+While bootstrap, it will load with sample data. You can use CUSTOMER_ID =1 to get response.
 
-This project provides an 2 API endpoints 
+
+This project provides 2 API endpoints 
 
 #### Endpoint :1 
 
 This is a GET endpoint takes customer Id as input and returns rewards per month
 ```
 /rewards/get/customer/{id}
-
 ```
 
 ##### Sample Response
@@ -37,7 +38,6 @@ This is a POST endpoint which takes customer Id, purchase (receipt) as input and
 
 ```
 /rewards/new/purchase/customer/{id}
-
 ```
 
 #### Sample Request
@@ -49,5 +49,12 @@ This is a POST endpoint which takes customer Id, purchase (receipt) as input and
 }
 ```
 
+#### Tech
+* Java 11
+* Spring Boot (Default server Tomcat runs in 8080 port)
+* lombok
+* spring-validations
+* Junit 5
+* Mockito
 
 
